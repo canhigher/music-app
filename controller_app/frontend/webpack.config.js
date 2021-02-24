@@ -4,7 +4,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, "./static/frontend"),
+    path: path.resolve(__dirname, "./public"),
     filename: "[name].js",
   },
   module: {
@@ -14,7 +14,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-        },
+        }, 
       },
     ],
   },
