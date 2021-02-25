@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        loader: "vue-loader",
+        loader: 'vue-loader'
       },
 
       {
@@ -29,7 +29,6 @@ module.exports = {
           name : '[name].[ext]?[hash]'
         }
       },
-
       {
         test: /\.css$/,
         use: [
