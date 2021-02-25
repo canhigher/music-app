@@ -10,9 +10,9 @@ def generate_unique_code():
         if Room.objects.filter(code = code).count() == 0:
             break
     return code
-    
+
 class Room(models.Model):
-    code = models.CharField(unique = True, max_length = 8, default)
+    code = models.CharField(unique = True, max_length = 8, default = "")
     host = models.CharField(unique = True, max_length = 50)
     votes_to_skip = models.IntegerField(null = False, default = 1)
     guest_can_pause = models.BooleanField(null = False, default = False)
