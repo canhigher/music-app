@@ -1,5 +1,5 @@
 TO-DO LIST
 
 + installation vue, webpack, babel
-- creating Room model
-- url settings
++ creating Room model
++ url settings

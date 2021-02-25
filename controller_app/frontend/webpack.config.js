@@ -1,11 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "./public"),
-    filename: "[name].js",
+    filename: "[name].js", 
   },
   module: {
     rules: [
@@ -16,6 +17,26 @@ module.exports = {
           loader: "babel-loader",
         }, 
       },
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
+      },
+
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: "file-loader",
+        options: {
+          name : '[name].[ext]?[hash]'
+        }
+      },
+
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
+      }
     ],
   },
   optimization: {
@@ -28,5 +49,6 @@ module.exports = {
         NODE_ENV: JSON.stringify("production"),
       },
     }),
+    new VueLoaderPlugin()
   ],
 };
