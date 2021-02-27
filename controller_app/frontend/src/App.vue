@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <router-link to="/create">Create!</router-link>
+      <b-link href="/create" class="card-link">Backcreate</b-link>
+      <b-link href="/join" class="card-link">Backjoin</b-link>
+      <router-link to="/join">Join!</router-link>
     <router-view />
   </div>
 </template>
 
 <script>
-
-import HelloWorld from './components/HelloWorld.vue';
-import JoinRoom from './components/JoinRoom.vue';
-import CreateRoom from './components/CreateRoom.vue';
+import JoinRoom from './views/JoinRoom.vue';
+import CreateRoom from './views/CreateRoom.vue';
 
 export default {
   name: 'App',
-  components : { HelloWorld, JoinRoom, CreateRoom }
+  components : { JoinRoom, CreateRoom }
 }
 </script>
 
