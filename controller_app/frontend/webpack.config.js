@@ -33,8 +33,8 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
-        ]
+          { loader: 'css-loader', options: { esModule: false }}
+        ],
       }
     ],
   },

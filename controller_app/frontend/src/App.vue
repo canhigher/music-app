@@ -11,10 +11,12 @@
 <script>
 
 import HelloWorld from './components/HelloWorld.vue';
+import JoinRoom from './components/JoinRoom.vue';
+import CreateRoom from './components/CreateRoom.vue';
 
 export default {
   name: 'App',
-  components : { HelloWorld }
+  components : { HelloWorld, JoinRoom, CreateRoom }
 }
 </script>
 
