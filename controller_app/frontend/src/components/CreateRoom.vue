@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p>Create room page</p>
+    <p>Create room page </p>
   </div>
 </template>
 

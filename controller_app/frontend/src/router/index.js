@@ -20,16 +20,19 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/create",
-    name: "Create",
-    component: () => import("../components/CreateRoom.vue")
+      path:"/create",
+      name:"Create",
+      component: () => 
+        import("../components/CreateRoom.vue")
   },
-
+  
   {
-    path: "/join",
-    name: "Join",
-    component: () => import("../components/JoinRoom.vue")
+      path:"/join",
+      name:"Join",
+      component: () => 
+        import("../components/JoinRoom.vue")
   }
+
 ];
 
 const router = new VueRouter({
