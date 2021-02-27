@@ -30,12 +30,14 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           "vue-style-loader",
-          { loader: "css-loader", options: { esModule: false } }
+          { loader: "css-loader", options: { esModule: false } },
+          "sass-loader"
         ]
-      }
+      },
+      
     ]
   },
   optimization: {
