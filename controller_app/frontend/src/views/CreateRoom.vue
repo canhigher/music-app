@@ -1,11 +1,7 @@
 <template>
 
-    <b-card title="Card title" sub-title="Card subtitle">
-        <b-card-text>
-          Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-          content.
-        </b-card-text>
-
+    <b-card title="Create a room" sub-title="Guest control of playback state">
+      
         <b-form-group label="Individual radios">
           <b-form-radio name="some-radios" value="A">Play/Pause</b-form-radio>
           <b-form-radio name="some-radios" value="B">No Control</b-form-radio>

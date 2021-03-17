@@ -1,6 +1,7 @@
 <template>
 
   <div class="hello">
+    
     <p>Join room page </p>
   </div>
   
